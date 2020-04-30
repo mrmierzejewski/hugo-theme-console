@@ -1,0 +1,14 @@
+{{ define "main" }}
+<h1>{{ .Title }}</h1>
+
+{{ .PublishDate.Format "Jan. 2, 2006" }}
+{{ with .Params.linkedin }}
+    // <a href="{{ . }}">Linkedin</a>
+{{ end }}
+{{ with .Params.twitter }}
+    // <a href="{{ . }}">Twitter</a>
+{{ end }}
+<br/><br/>
+{{ .Content }}
+{{ template "_internal/disqus.html" . }}
+{{ end }}

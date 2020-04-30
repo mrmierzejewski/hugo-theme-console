@@ -1,0 +1,18 @@
+name = "hugo-theme-console"
+license = "MIT"
+licenselink = "https://github.com/mrmierzejewski/hugo-theme-console/blob/master/LICENSE"
+description = "A minimal, responsive and light theme for Hugo inspired by Linux console."
+homepage = "https://github.com/mrmierzejewski/hugo-theme-console"
+tags = ["blog", "gallery", "portfolio", "console", "terminal", "clean", "personal", "minimal", "monotone", "simple", "technical", "responsive", "mobile", "minimalist", "retro", "animation"]
+features = ["disqus", "responsive", "google analytics"]
+min_version = "0.69.0"
+
+[author]
+    name = "Marcin Mierzejewski"
+    homepage = "https://mrmierzejewski.com"
+    github = "https://github.com/mrmierzejewski"
+
+[original]
+    author = "Jonas D."
+    homepage = "https://terminalcss.xyz/"
+    repo = "https://github.com/Gioni06/terminal.css"

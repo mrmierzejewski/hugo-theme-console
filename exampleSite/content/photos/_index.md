@@ -1,0 +1,6 @@
++++
+title = "Photos"
+type = "gallery"
++++
+
+

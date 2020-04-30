@@ -1,0 +1,18 @@
+baseurl = "//example.com/"
+title = "console-demo"
+theme = "hugo-theme-console"
+languageCode = "en-us"
+
+[params]
+  [[params.navlinks]]
+  name = "about/"
+  url = "/about/"
+
+  [[params.navlinks]]
+  name = "posts/"
+  url = "/posts/"
+  home = true
+  
+  [[params.navlinks]]
+  name = "photos/"
+  url = "photos/"

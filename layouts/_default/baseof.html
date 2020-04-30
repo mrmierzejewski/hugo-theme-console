@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="{{ .Site.LanguageCode }}">
+<head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <title>{{ .Site.Title }}{{ $url := urls.Parse .Page.Permalink }}{{ $url.Path }}</title>
+    {{ with .Site.Params.description }}<meta name="description" content="{{ . }}">{{ end }}
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="robots" content="all,follow">
+    <meta name="googlebot" content="index,follow,snippet,archive">
+    <link rel="stylesheet" href="{{ "hugo-theme-console/css/terminal-0.7.1.min.css" | absURL }}">
+    <link rel="stylesheet" href="{{ "hugo-theme-console/css/animate-3.7.2.min.css" | absURL }}">
+    <link rel="stylesheet" href="{{ "hugo-theme-console/css/console.css" | absURL }}">
+    {{ `
+      <!--[if lt IE 9]>
+          <script src="https://oss.maxcdn.com/html5shiv/3.7.2/html5shiv.min.js"></script>
+          <script src="https://oss.maxcdn.com/respond/1.4.2/respond.min.js"></script>
+      <![endif]-->
+    ` | safeHTML }}
+
+    <link rel="shortcut icon" href="{{ "img/favicon.ico" | absURL }}">
+    <link rel="apple-touch-icon" sizes="180x180" href="/img/apple-touch-icon.png">
+    <link rel="icon" type="image/png" sizes="32x32" href="/img/favicon-32x32.png">
+    <link rel="icon" type="image/png" sizes="16x16" href="/img/favicon-16x16.png">
+    <link rel="manifest" href="/img/site.webmanifest">
+    {{ with .OutputFormats.Get "RSS" }}
+      {{ printf `<link href="%s" rel="%s" type="%s" title="%s" />` .Permalink .Rel .MediaType.Type $.Site.Title | safeHTML }}
+    {{ end }}
+    {{ template "opengraph.html" . }}
+    {{ template "_internal/twitter_cards.html" . }}
+    {{ template "_internal/google_analytics.html" . }}
+</head>
+<body class="terminal">
+    <div class="container">
+        <div class="terminal-nav">
+          <header class="terminal-logo">
+            <div class="logo terminal-prompt">
+              {{ $url := replace .Permalink ( printf "%s" .Site.BaseURL) "" }}
+              {{ $.Scratch.Add "path" .Site.BaseURL }}
+              <a href="{{ .Site.BaseURL }}" class="no-style site-name">{{ .Site.Title }}</a>:~# {{ range $index, $element := split $url "/" }}{{ $.Scratch.Add "path" $element }}{{ if ne $element "" }}<a href='{{ $.Scratch.Get "path" }}'>{{ . }}</a>/{{ $.Scratch.Add "path" "/" }}{{ end }}{{ end }}</header>
+          <nav class="terminal-menu">
+            <ul vocab="https://schema.org/" typeof="BreadcrumbList">
+                {{ range .Site.Params.navlinks }}
+                <li><a href="{{ absURL .url }}" typeof="ListItem">{{ .name }}</a></li>
+                {{ end }}
+            </ul>
+          </nav>
+        </div>
+    </div>
+
+    <div class="container animated zoomIn fast">
+        {{ block "main" . }}
+        {{ end }}
+    </div>
+  </body>
+</html>
