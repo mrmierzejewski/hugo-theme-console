@@ -135,6 +135,7 @@ strong {
     --global-line-height: 1.6em;
     --page-width: 70em;
     --display-h1-decoration: 1;
+    --code-bg-color: #fff;
 }
 
 .terminal-menu li {
@@ -156,6 +157,11 @@ figure {
     margin-right: 60px;
 }
 
+.footer {
+    margin-top: 150px;
+    padding-top: 10px;;
+    border-top: 1px solid var(--secondary-color);
+}
 
 @media only screen and (max-width: 850px) {
     .site-name {
@@ -194,6 +200,12 @@ figure {
     .post-list-date {
         display: none;
     }
+
+    .footer {
+        margin-top: 50px;
+        padding-top: 5px;;
+        border-top: 1px solid var(--secondary-color);
+    }
 }
 
 
@@ -221,3 +233,5 @@ figure {
     margin-top: 10px;
     margin-bottom: 10px;
 }
+
+
