@@ -158,14 +158,18 @@ figure {
 }
 
 .footer {
-    margin-top: 150px;
+    clear: both;
+    margin-top: 100px;
     padding-top: 10px;;
     border-top: 1px solid var(--secondary-color);
+    color: var(--global-font-color);
 }
 
 @media only screen and (max-width: 850px) {
     .site-name {
-        display: none;        
+        width: 2ch;
+        overflow: hidden;
+        display: inline-block;
     }
     .terminal-nav {
         align-items: flex-start;
@@ -204,7 +208,6 @@ figure {
     .footer {
         margin-top: 50px;
         padding-top: 5px;;
-        border-top: 1px solid var(--secondary-color);
     }
 }
 
