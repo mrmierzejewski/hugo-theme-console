@@ -24,6 +24,14 @@ Set theme parameter in your config file:
 theme = "hugo-theme-console"
 ```
 
+## Example Site
+
+If you want to run the example site, please run the following command:
+
+```
+makefile hugo-server
+```
+
 ## License
 
 Copyright © 2020 [Marcin Mierzejewski](https://mrmierzejewski.com/)
