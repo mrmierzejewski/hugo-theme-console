@@ -237,7 +237,8 @@ figure {
         margin-right: 30px;
     }
     .post-list-date {
-        display: none;
+        width: 0;
+        overflow: hidden;
     }
 
     .footer {
