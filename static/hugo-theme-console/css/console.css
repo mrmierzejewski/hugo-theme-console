@@ -30,6 +30,27 @@
     text-rendering: optimizeLegibility;
 }
 
+:root {
+    --global-font-size: 16px;
+    --global-font-color: #444;
+    --mono-font-stack: Roboto Mono, Menlo, Monaco, Lucida Console, Liberation Mono, DejaVu Sans Mono, Bitstream Vera Sans Mono, Courier New, monospace, serif;
+    --font-stack: Roboto Mono, Menlo, Monaco, Lucida Console, Liberation Mono, DejaVu Sans Mono, Bitstream Vera Sans Mono, Courier New, monospace, serif;
+    --global-line-height: 1.6em;
+    --page-width: 70em;
+    --display-h1-decoration: 1;
+    --code-bg-color: #fff;
+}
+
+@media only screen and (max-width: 850px) {
+    :root {
+        --global-font-size: 14px;
+        --global-font-color: #444;
+        --global-line-height: 1.6em;
+        --page-width: 70em;
+    }
+} 
+
+
 .sidebar-heading {
     text-transform: none;
     letter-spacing: 0;
@@ -69,6 +90,7 @@ h6,
 .h5,
 .h6 {
     font-family: var(--font-stack);
+    clear: both;
 }
 
 h1 {
@@ -127,17 +149,6 @@ strong {
     font-weight: normal;
 }
 
-:root {
-    --global-font-size: 16px;
-    --global-font-color: #444;
-    --mono-font-stack: Roboto Mono, Menlo, Monaco, Lucida Console, Liberation Mono, DejaVu Sans Mono, Bitstream Vera Sans Mono, Courier New, monospace, serif;
-    --font-stack: Roboto Mono, Menlo, Monaco, Lucida Console, Liberation Mono, DejaVu Sans Mono, Bitstream Vera Sans Mono, Courier New, monospace, serif;
-    --global-line-height: 1.6em;
-    --page-width: 70em;
-    --display-h1-decoration: 1;
-    --code-bg-color: #fff;
-}
-
 .terminal-menu li {
     margin-right: 30px;
 }
@@ -165,53 +176,6 @@ figure {
     color: var(--global-font-color);
 }
 
-@media only screen and (max-width: 850px) {
-    .site-name {
-        width: 2ch;
-        overflow: hidden;
-        display: inline-block;
-    }
-    .terminal-nav {
-        align-items: flex-start;
-        flex-direction: column;
-        display: flex;
-    }
-    .terminal-menu ul {
-        align-items: flex-start;
-        display: flex;
-        flex-direction: row;
-        justify-content: left;
-        margin-top: 0;
-    }
-    .terminal-menu li {
-        margin-right: 20px;
-    }
-    .logo {
-        padding: calc(var(--global-space) * 1) 0 calc(var(--global-space) * 1);
-    }
-    :root {
-        --global-font-size: 14px;
-        --global-font-color: #444;
-        --global-line-height: 1.6em;
-        --page-width: 70em;
-    }
-    figure {
-        margin-top: 5px;
-        margin-bottom: 5px;
-        margin-left: 30px;
-        margin-right: 30px;
-    }
-    .post-list-date {
-        display: none;
-    }
-
-    .footer {
-        margin-top: 50px;
-        padding-top: 5px;;
-    }
-}
-
-
 .image-grid {
     display: grid;
     grid-template-rows: auto;
@@ -237,4 +201,47 @@ figure {
     margin-bottom: 10px;
 }
 
+@media only screen and (max-width: 850px) {
+    .site-name {
+        width: 2ch;
+        overflow: hidden;
+        display: inline-block;
+    }
+ 
+    .terminal-nav {
+        align-items: flex-start;
+        flex-direction: column;
+        display: flex;
+    }
+ 
+    .terminal-menu ul {
+        align-items: flex-start;
+        display: flex;
+        flex-direction: row;
+        justify-content: left;
+        margin-top: 0;
+    }
+ 
+    .terminal-menu li {
+        margin-right: 20px;
+    }
+ 
+    .logo {
+        padding: calc(var(--global-space) * 1) 0 calc(var(--global-space) * 1);
+    }
+ 
+    figure {
+        margin-top: 5px;
+        margin-bottom: 5px;
+        margin-left: 30px;
+        margin-right: 30px;
+    }
+    .post-list-date {
+        display: none;
+    }
 
+    .footer {
+        margin-top: 50px;
+        padding-top: 5px;;
+    }
+}
