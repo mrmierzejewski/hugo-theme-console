@@ -153,14 +153,6 @@ strong {
     margin-right: 30px;
 }
 
-.post-list-date {
-    float: left;
-    font-weight: bold;
-    width: 150px;
-    height: 120px;
-    margin-top: 21px;
-}
-
 figure {
     margin-top: 15px;
     margin-bottom: 15px;
@@ -201,6 +193,28 @@ figure {
     margin-bottom: 10px;
 }
 
+.posts-list {
+    position: relative;
+    padding-left: 150px;
+    top: 0;
+    margin-top: 21px;
+}
+
+.post h1 {
+    padding-top: 0;
+}
+
+.posts-list .date {
+    display: inline-block;
+    position: absolute;
+    left: 0px;
+    width: 150px;
+    height: 100%;
+    z-index: 400;
+    font-weight: bold;
+    padding-top: 3px;
+}
+
 @media only screen and (max-width: 850px) {
     .site-name {
         width: 2ch;
@@ -236,10 +250,30 @@ figure {
         margin-left: 30px;
         margin-right: 30px;
     }
-    .post-list-date {
-        width: 0;
-        overflow: hidden;
+
+    .posts-list {
+        position: relative;
+        padding-left: 0;
+        top: 0;
+        margin-top: 21px;
     }
+    
+    .post h1 {
+        padding-top: 0;
+    }
+    
+    .posts-list .date {
+        display: inline-block;
+        position: absolute;
+        left: 0px;
+        width: 150px;
+        height: 100%;
+        z-index: 400;
+        font-weight: bold;
+        padding-top: 3px;
+        display: none;
+    }
+    
 
     .footer {
         margin-top: 50px;

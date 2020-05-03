@@ -26,7 +26,7 @@ theme = "hugo-theme-console"
 
 ## Example Site
 
-If you want to run the example site, please run the following command:
+To run the example site, please type the following command:
 
 ```
 makefile hugo-server
