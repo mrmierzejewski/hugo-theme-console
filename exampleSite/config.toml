@@ -1,4 +1,4 @@
-baseurl = "//example.com/"
+baseurl = "https://example.com/"
 title = "console-demo"
 theme = "hugo-theme-console"
 languageCode = "en-us"
@@ -6,11 +6,11 @@ languageCode = "en-us"
 [params]
   [[params.navlinks]]
   name = "about/"
-  url = "/about/"
+  url = "about/"
 
   [[params.navlinks]]
   name = "posts/"
-  url = "/posts/"
+  url = "posts/"
   
   [[params.navlinks]]
   name = "photos/"
