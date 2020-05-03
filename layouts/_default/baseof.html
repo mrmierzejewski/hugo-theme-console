@@ -23,7 +23,7 @@
       {{ printf `<link href="%s" rel="%s" type="%s" title="%s" />` .Permalink .Rel .MediaType.Type $.Site.Title | safeHTML }}
     {{ end }}
     {{- partial "opengraph.html" . -}}
-    {{ template "_internal/twitter_cards.html" . }}
+    {{- partial "twitter_cards.html" . -}}
     {{ template "_internal/google_analytics.html" . }}
 </head>
 <body class="terminal">
