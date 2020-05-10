@@ -10,9 +10,11 @@ https://mrmierzejewski.com
 
 ## Installation
 
-    $ mkdir themes
-    $ cd themes
-    $ git submodule add https://github.com/mrmierzejewski/hugo-theme-console.git hugo-theme-console
+```sh
+$ mkdir themes
+$ cd themes
+$ git submodule add https://github.com/mrmierzejewski/hugo-theme-console.git hugo-theme-console
+```
     
 See the [Hugo documentation](https://gohugo.io/themes/installing/) for more information.
 
