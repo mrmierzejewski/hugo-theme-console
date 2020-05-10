@@ -32,6 +32,11 @@ To run the example site, please type the following command:
 makefile hugo-server
 ```
 
+### Start page
+
+The default start page template is located at ```themes/hugo-theme-console/layouts/index.html```. To change the page contect, you to need to copy this file to 
+your website top-level ```layouts``` folder (```layouts/index.html```).
+
 ## License
 
 Copyright © 2020 [Marcin Mierzejewski](https://mrmierzejewski.com/)
