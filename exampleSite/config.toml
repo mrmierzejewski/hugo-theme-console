@@ -4,6 +4,9 @@ theme = "hugo-theme-console"
 languageCode = "en-us"
 
 [params]
+  # Cutting off the page title to two chars for mobile (console-demo -> co)
+  titleCutting = true
+
   [[params.navlinks]]
   name = "about/"
   url = "about/"
