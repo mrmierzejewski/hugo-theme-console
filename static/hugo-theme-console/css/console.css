@@ -1,6 +1,6 @@
 @font-face {
     font-family: 'Roboto Mono';
-    src: url('/hugo-theme-console/font/RobotoMono-Regular.ttf') format('truetype');
+    src: url('../font/RobotoMono-Regular.ttf') format('truetype');
     font-style: normal;
     font-weight: 400;
     text-rendering: optimizeLegibility;
@@ -8,7 +8,7 @@
 
 @font-face {
     font-family: 'Roboto Mono';
-    src: url('/hugo-theme-console/font/RobotoMono-Italic.ttf') format('truetype');
+    src: url('../font/RobotoMono-Italic.ttf') format('truetype');
     font-style: italic;
     font-weight: 400;
     text-rendering: optimizeLegibility;
@@ -16,7 +16,7 @@
 
 @font-face {
     font-family: 'Roboto Mono';
-    src: url('/hugo-theme-console/font/RobotoMono-Bold.ttf') format('truetype');
+    src: url('../font/RobotoMono-Bold.ttf') format('truetype');
     font-style: normal;
     font-weight: 700;
     text-rendering: optimizeLegibility;
@@ -24,7 +24,7 @@
 
 @font-face {
     font-family: 'Roboto Mono';
-    src: url('/hugo-theme-console/font/RobotoMono-BoldItalic.ttf') format('truetype');
+    src: url('../font/RobotoMono-BoldItalic.ttf') format('truetype');
     font-style: italic;
     font-weight: 700;
     text-rendering: optimizeLegibility;
@@ -48,7 +48,7 @@
         --global-line-height: 1.6em;
         --page-width: 70em;
     }
-} 
+}
 
 
 .sidebar-heading {
@@ -221,13 +221,13 @@ figure {
         overflow: hidden;
         display: inline-block;
     }
- 
+
     .terminal-nav {
         align-items: flex-start;
         flex-direction: column;
         display: flex;
     }
- 
+
     .terminal-menu ul {
         align-items: flex-start;
         display: flex;
@@ -235,15 +235,15 @@ figure {
         justify-content: left;
         margin-top: 0;
     }
- 
+
     .terminal-menu li {
         margin-right: 20px;
     }
- 
+
     .logo {
         padding: calc(var(--global-space) * 1) 0 calc(var(--global-space) * 1);
     }
- 
+
     figure {
         margin-top: 5px;
         margin-bottom: 5px;
@@ -257,11 +257,11 @@ figure {
         top: 0;
         margin-top: 21px;
     }
-    
+
     .post h1 {
         padding-top: 0;
     }
-    
+
     .posts-list .date {
         display: inline-block;
         position: absolute;
@@ -273,7 +273,7 @@ figure {
         padding-top: 3px;
         display: none;
     }
-    
+
 
     .footer {
         margin-top: 50px;
