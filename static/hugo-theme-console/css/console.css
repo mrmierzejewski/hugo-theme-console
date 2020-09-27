@@ -209,7 +209,6 @@ figure {
     position: absolute;
     left: 0px;
     width: 150px;
-    height: 100%;
     z-index: 400;
     font-weight: bold;
     padding-top: 3px;
@@ -267,7 +266,6 @@ figure {
         position: absolute;
         left: 0px;
         width: 150px;
-        height: 100%;
         z-index: 400;
         font-weight: bold;
         padding-top: 3px;
