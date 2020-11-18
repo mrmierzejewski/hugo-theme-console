@@ -37,7 +37,7 @@ makefile hugo-server
 
 ### Start page
 
-The default start page template is located at ```themes/hugo-theme-console/layouts/index.html```. To change the page contect, you to need to copy this file to 
+The default start page template is located at ```themes/hugo-theme-console/layouts/index.html```. To change the page content, you to need to copy this file to 
 your website top-level ```layouts``` folder (```layouts/index.html```).
 
 ## License
