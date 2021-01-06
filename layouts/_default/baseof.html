@@ -47,7 +47,7 @@
         </div>
     </div>
 
-    <div class="container animated zoomIn fast">
+    <div class="container {{ .Site.Params.animateStyle }}" >
         {{ block "main" . }}
         {{ end }}
         {{ partial "footer.html" . }}
