@@ -195,32 +195,26 @@ figure {
 
 .posts-list {
     position: relative;
-    padding-left: 150px;
+    padding-left: 130px;
     top: 0;
-    margin-top: 21px;
 }
 
-.post h1 {
+.post h1, .post h2 {
     padding-top: 0;
+    margin: 0;
+    margin-bottom: 5px;
 }
 
 .posts-list .date {
     display: inline-block;
     position: absolute;
     left: 0px;
-    width: 150px;
+    width: 130px;
     z-index: 400;
-    font-weight: bold;
-    padding-top: 3px;
+    padding-top: 0;
 }
 
 @media only screen and (max-width: 850px) {
-    .site-name {
-        width: 2ch;
-        overflow: hidden;
-        display: inline-block;
-    }
-
     .terminal-nav {
         align-items: flex-start;
         flex-direction: column;
@@ -254,10 +248,9 @@ figure {
         position: relative;
         padding-left: 0;
         top: 0;
-        margin-top: 21px;
     }
 
-    .post h1 {
+    .post h1, .post h2 {
         padding-top: 0;
     }
 
@@ -268,7 +261,7 @@ figure {
         width: 150px;
         z-index: 400;
         font-weight: bold;
-        padding-top: 3px;
+        padding-top: 0;
         display: none;
     }
 
