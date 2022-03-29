@@ -32,7 +32,7 @@ theme = "hugo-theme-console"
 To run the example site, please type the following command:
 
 ```
-makefile hugo-server
+make hugo-server
 ```
 
 ### Start page
