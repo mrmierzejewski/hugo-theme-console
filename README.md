@@ -6,7 +6,6 @@ A minimal, responsive and light theme for Hugo inspired by Linux console.
 
 ## Live demo
 
-* https://mrmierzejewski.com
 * https://themes.gohugo.io/themes/hugo-theme-console/
 
 ## Installation
