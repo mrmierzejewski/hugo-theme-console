@@ -7,12 +7,13 @@ tags = ["blog", "gallery", "portfolio", "console", "terminal", "clean", "persona
 features = ["disqus", "responsive", "google analytics"]
 min_version = "0.81.0"
 
+
 [author]
-    name = "Marcin Mierzejewski"
-    homepage = "https://mrmierzejewski.com"
-    github = "https://github.com/mrmierzejewski"
+  name = "Marcin Mierzejewski"
+  homepage = "https://mrmierzejewski.com"
+  github = "https://github.com/mrmierzejewski"
 
 [original]
-    author = "Jonas D."
-    homepage = "https://terminalcss.xyz/"
-    repo = "https://github.com/Gioni06/terminal.css"
+  author = "Jonas D."
+  homepage = "https://terminalcss.xyz/"
+  repo = "https://github.com/Gioni06/terminal.css"
