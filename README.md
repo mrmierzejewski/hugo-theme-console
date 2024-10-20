@@ -1,6 +1,6 @@
 # Hugo Theme: Console
 
-A lightweight and responsive theme for Hugo, inspired by the Linux console designed for fast performance, with an average page load time of just 0.5 seconds,
+A lightweight and responsive theme for Hugo, inspired by the Linux console designed for fast performance, with an average page load time of just 0.5 seconds.
 
 ![Console](https://github.com/mrmierzejewski/hugo-theme-console/blob/master/images/preview.png?raw=true)
 
