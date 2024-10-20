@@ -12,7 +12,7 @@ A lightweight and responsive theme for Hugo, inspired by the Linux console desig
 
 From the root of your Hugo site, clone the theme into ```themes/hugo-theme-console``` by running :
 
-```sh
+```
 $ git submodule add https://github.com/mrmierzejewski/hugo-theme-console.git hugo-theme-console
 ```
     
@@ -53,7 +53,7 @@ Copy at least the `config.toml` in the root directory of your website. Overwrite
 Hugo includes a development server, so you can view your changes as you go -
 very handy. Spin it up with the following command:
 
-```sh
+```
 hugo serve
 ```
 
@@ -70,5 +70,4 @@ make hugo-server
 ## License
 
 Copyright © 2024 [Marcin Mierzejewski](https://mrmierzejewski.com/)
-
 The theme is released under the MIT License. Check the [original theme license](https://github.com/panr/hugo-theme-terminal/blob/master/LICENSE.md) for additional licensing information.
