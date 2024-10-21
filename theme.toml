@@ -1,12 +1,11 @@
 name = "hugo-theme-console"
 license = "MIT"
 licenselink = "https://github.com/mrmierzejewski/hugo-theme-console/blob/master/LICENSE"
-description = "A lightweight and responsive theme for Hugo, inspired by the Linux console designed for fast performance, with an average page load time of just 0.5 seconds."
+description = " minimal and responsive Hugo theme inspired by the system console, crafted for optimal performance with an average page load time of under one second."
 homepage = "https://github.com/mrmierzejewski/hugo-theme-console"
 tags = ["blog", "gallery", "portfolio", "console", "terminal", "clean", "personal", "minimal", "monotone", "simple", "technical", "responsive", "mobile", "minimalist", "retro", "animation"]
 features = ["disqus", "responsive", "google analytics"]
-min_version = "0.81.0"
-
+min_version = "0.90.0"
 
 [author]
   name = "Marcin Mierzejewski"

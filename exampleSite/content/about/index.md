@@ -3,7 +3,9 @@ date = "2016-11-05T21:05:33+05:30"
 title = "About"
 +++
 
-A lightweight and responsive theme for Hugo, inspired by the Linux console designed for fast performance, with an average page load time of just 0.5 seconds,
+A minimal and responsive Hugo theme inspired by the system console, crafted for optimal performance with an average page load time of under one second.
+
+Theme is based on a modern and minimal [Terminal CSS](https://terminalcss.xyz/) framework. 
 
 ![Console](https://github.com/mrmierzejewski/hugo-theme-console/blob/master/images/preview.png?raw=true)
 
