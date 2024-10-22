@@ -1,13 +1,16 @@
 {{ define "main" }}
 
-<h1>About</h1>
+<!--<h1>About</h1>-->
 
 <p>
-Console is a minimal, responsive and light theme for Hugo inspired by Linux console.  <a href="about/">(more)</a>
+    <br />
+    <br />
+<i>The cistern contains; the fountain overflows.</i><br />
+- William Blake, <i>Proverbs of Hell.</i>
 </p>
 <br/>
 
-<h1>Latest posts</h1>
+<!--<h1>Latest posts</h1>
 
 <div class="posts-list">
 {{ with .Site.GetPage "/posts" }}
@@ -21,12 +24,12 @@ Console is a minimal, responsive and light theme for Hugo inspired by Linux cons
         </div>    
     {{ end }}
 {{ end }}
-</div>
+</div>-->
 
-<h1>Latest photos</h1>
+<h1>Projects</h1>
 
 <div class="image-grid">
-{{ with .Site.GetPage "/photos" }}
+{{ with .Site.GetPage "/projects" }}
     {{ range first 3 (sort .Data.Pages "Date" "desc")}}
         <a href="{{ .Permalink }}" title="{{ .Title }}">
         {{ $image := .Page.Resources.GetMatch .Params.image }}
