@@ -10,9 +10,9 @@
 </p>
 <br/>
 
-<!--<h1>Latest posts</h1>
+<!--<h1>Latest posts</h1>-->
 
-<div class="posts-list">
+<!--<div class="posts-list">
 {{ with .Site.GetPage "/posts" }}
     {{ range first 3 (sort .Data.Pages "Date" "desc" (where .Pages ".Params.private" "!=" true))}}
         <div class="post">
@@ -24,12 +24,12 @@
         </div>    
     {{ end }}
 {{ end }}
-</div>-->
+</div>
 
-<h1>Projects</h1>
+<h1>Music</h1>-->
 
 <div class="image-grid">
-{{ with .Site.GetPage "/projects" }}
+{{ with .Site.GetPage "/music" }}
     {{ range first 3 (sort .Data.Pages "Date" "desc")}}
         <a href="{{ .Permalink }}" title="{{ .Title }}">
         {{ $image := .Page.Resources.GetMatch .Params.image }}
