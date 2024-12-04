@@ -59,6 +59,21 @@
     }
 }
 
+@media (prefers-color-scheme: dark) {
+    :root {
+        --background-color: #151515;
+        --font-color: #e0e0e0;
+        --global-font-color: #e0e0e0;
+        --invert-font-color: #151515;
+        --primary-color: #1a95e0;
+        --secondary-color: #d6d6d7;
+        --block-background-color: #202020;
+        --code-bg-color: #282828;
+        --progress-bar-background: #404040;
+        --progress-bar-fill: #1a95e0;
+    }
+}
+
 @media only screen and (max-width: 850px) {
     :root {
         --global-font-size: 14px;
