@@ -1,30 +1,30 @@
 @font-face {
-    font-family: 'Roboto Mono';
-    src: url('../font/RobotoMono-Regular.ttf') format('truetype');
+    font-family: "Roboto Mono";
+    src: url("../font/RobotoMono-Regular.ttf") format("truetype");
     font-style: normal;
     font-weight: 400;
     text-rendering: optimizeLegibility;
 }
 
 @font-face {
-    font-family: 'Roboto Mono';
-    src: url('../font/RobotoMono-Italic.ttf') format('truetype');
+    font-family: "Roboto Mono";
+    src: url("../font/RobotoMono-Italic.ttf") format("truetype");
     font-style: italic;
     font-weight: 400;
     text-rendering: optimizeLegibility;
 }
 
 @font-face {
-    font-family: 'Roboto Mono';
-    src: url('../font/RobotoMono-Bold.ttf') format('truetype');
+    font-family: "Roboto Mono";
+    src: url("../font/RobotoMono-Bold.ttf") format("truetype");
     font-style: normal;
     font-weight: 700;
     text-rendering: optimizeLegibility;
 }
 
 @font-face {
-    font-family: 'Roboto Mono';
-    src: url('../font/RobotoMono-BoldItalic.ttf') format('truetype');
+    font-family: "Roboto Mono";
+    src: url("../font/RobotoMono-BoldItalic.ttf") format("truetype");
     font-style: italic;
     font-weight: 700;
     text-rendering: optimizeLegibility;
@@ -33,12 +33,30 @@
 :root {
     --global-font-size: 16px;
     --global-font-color: #444;
-    --mono-font-stack: Roboto Mono, Menlo, Monaco, Lucida Console, Liberation Mono, DejaVu Sans Mono, Bitstream Vera Sans Mono, Courier New, monospace, serif;
-    --font-stack: Roboto Mono, Menlo, Monaco, Lucida Console, Liberation Mono, DejaVu Sans Mono, Bitstream Vera Sans Mono, Courier New, monospace, serif;
+    --mono-font-stack: Roboto Mono, Menlo, Monaco, Lucida Console,
+        Liberation Mono, DejaVu Sans Mono, Bitstream Vera Sans Mono,
+        Courier New, monospace, serif;
+    --font-stack: Roboto Mono, Menlo, Monaco, Lucida Console, Liberation Mono,
+        DejaVu Sans Mono, Bitstream Vera Sans Mono, Courier New, monospace,
+        serif;
     --global-line-height: 1.6em;
     --page-width: 70em;
     --display-h1-decoration: 1;
     --code-bg-color: #fff;
+}
+@media (prefers-color-scheme: dark) {
+    :root {
+        --background-color: #151515;
+        --font-color: #e0e0e0;
+        --global-font-color: #e0e0e0;
+        --invert-font-color: #151515;
+        --primary-color: #1a95e0;
+        --secondary-color: #d6d6d7;
+        --block-background-color: #202020;
+        --code-bg-color: #282828;
+        --progress-bar-background: #404040;
+        --progress-bar-fill: #1a95e0;
+    }
 }
 
 @media only screen and (max-width: 850px) {
@@ -49,7 +67,6 @@
         --page-width: 70em;
     }
 }
-
 
 .sidebar-heading {
     text-transform: none;
@@ -73,7 +90,7 @@
 body {
     font-family: var(--font-stack);
     font-size: var(--global-font-size);
-    background-color: #fff;
+    background-color: var(--background-color);
     margin-bottom: 75px;
 }
 
@@ -163,7 +180,7 @@ figure {
 .footer {
     clear: both;
     margin-top: 100px;
-    padding-top: 10px;;
+    padding-top: 10px;
     border-top: 1px solid var(--secondary-color);
     color: var(--global-font-color);
 }
@@ -174,8 +191,10 @@ figure {
     display: grid;
     grid-gap: 1em;
     grid-template-rows: auto;
-    grid-template-columns: repeat(auto-fit,
-            minmax(calc(var(--page-width) / 4), 1fr));
+    grid-template-columns: repeat(
+        auto-fit,
+        minmax(calc(var(--page-width) / 4), 1fr)
+    );
 }
 
 .terminal-prompt::after {
@@ -199,7 +218,8 @@ figure {
     top: 0;
 }
 
-.post h1, .post h2 {
+.post h1,
+.post h2 {
     padding-top: 0;
     margin: 0;
     margin-bottom: 5px;
@@ -256,7 +276,8 @@ figure {
         top: 0;
     }
 
-    .post h1, .post h2 {
+    .post h1,
+    .post h2 {
         padding-top: 0;
     }
 
@@ -271,9 +292,8 @@ figure {
         display: none;
     }
 
-
     .footer {
         margin-top: 50px;
-        padding-top: 5px;;
+        padding-top: 5px;
     }
 }
