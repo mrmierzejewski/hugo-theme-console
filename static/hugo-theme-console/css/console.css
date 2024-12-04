@@ -44,6 +44,7 @@
     --display-h1-decoration: 1;
     --code-bg-color: #fff;
 }
+
 @media (prefers-color-scheme: dark) {
     :root {
         --background-color: #151515;
