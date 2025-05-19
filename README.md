@@ -12,13 +12,37 @@ Theme is based on a modern and minimal [Terminal CSS](https://terminalcss.xyz/) 
 
 ## Installation
 
-From the root of your Hugo site, clone the theme into ```themes/hugo-theme-console``` by running :
+### Adding theme as a Git submodule
 
-```
+From the root of your Hugo site, clone the theme into `themes/hugo-theme-console` by running:
+
+```bash
 $ git submodule add https://github.com/mrmierzejewski/hugo-theme-console.git hugo-theme-console
 ```
     
 See the [Hugo documentation](https://gohugo.io/hugo-modules/theme-components/) for more information.
+
+### Adding theme as a Hugo module
+
+From the root of your Hugo site, turn your site into a Hugo module by running:
+
+```bash
+$ hugo mod init github.com/my-username/my-new-site
+
+```
+
+Next declare the `Console` theme module as a dependency for your site.
+
+```bash
+$ hugo mod get github.com/mrmierzejewski/hugo-theme-console
+```
+
+Finally, add this section to your config file `hugo.toml`:
+
+```toml
+[[module.imports]]
+  path = "github.com/mrmierzejewski/hugo-theme-console"
+```
 
 ## Configuration
 
@@ -34,7 +58,7 @@ After installation, take a look in the `exampleSite` folder at. This directory c
 
 ```
   exampleSite
-  ├── config.toml
+  ├── hugo.toml
   ├── content
   │   ├── about
   │   │   └── index.md
@@ -50,7 +74,7 @@ After installation, take a look in the `exampleSite` folder at. This directory c
   └── static
 ```
 
-Copy at least the `config.toml` in the root directory of your website. Overwrite the existing config file if necessary.
+Copy at least the `hugo.toml` in the root directory of your website. Overwrite the existing config file if necessary.
 
 Hugo includes a development server, so you can view your changes as you go -
 very handy. Spin it up with the following command:
