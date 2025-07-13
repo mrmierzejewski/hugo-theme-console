@@ -2,7 +2,7 @@
 <h1>{{ .Page.Title }}</h1>
 {{ .Content }}
 <div class="image-grid">
-    {{ range sort .Data.Pages "Date" "desc" }}
+    {{ range sort .Pages "Date" "desc" }}
         {{ if and (isset .Params "image") .Params.image }}
             <a href="{{ .Permalink }}" title="{{ .Title }}">
             {{ $image := .Page.Resources.GetMatch .Params.image }}

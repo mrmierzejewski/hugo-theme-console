@@ -4,7 +4,7 @@
 {{ .Content }}
 
 <div class="posts-list">
-{{ range sort .Data.Pages "Date" "desc" }}
+{{ range sort .Pages "Date" "desc" }}
     {{ if not .Params.private }}
         <div class="post">
             <p>

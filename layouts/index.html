@@ -11,7 +11,7 @@ Console is a minimal, responsive and light theme for Hugo inspired by Linux cons
 
 <div class="posts-list">
 {{ with .Site.GetPage "/posts" }}
-    {{ range first 3 (sort .Data.Pages "Date" "desc" (where .Pages ".Params.private" "!=" true))}}
+    {{ range first 3 (sort .Pages "Date" "desc" (where .Pages ".Params.private" "!=" true))}}
         <div class="post">
             <p>
                 <div class="date">{{ .Date | time.Format ":date_medium" }}</div>
@@ -27,7 +27,7 @@ Console is a minimal, responsive and light theme for Hugo inspired by Linux cons
 
 <div class="image-grid">
 {{ with .Site.GetPage "/photos" }}
-    {{ range first 3 (sort .Data.Pages "Date" "desc")}}
+    {{ range first 3 (sort .Pages "Date" "desc")}}
         <a href="{{ .Permalink }}" title="{{ .Title }}">
         {{ $image := .Page.Resources.GetMatch .Params.image }}
         {{ with $image }}
