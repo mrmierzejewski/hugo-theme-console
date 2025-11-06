@@ -37,7 +37,7 @@ After installation, take a look in the `exampleSite` folder at. This directory c
 
 ```
   exampleSite
-  ├── config.toml
+  ├── hugo.toml
   ├── content
   │   ├── about
   │   │   └── index.md
@@ -53,7 +53,7 @@ After installation, take a look in the `exampleSite` folder at. This directory c
   └── static
 ```
 
-Copy at least the `config.toml` in the root directory of your website. Overwrite the existing config file if necessary.
+Copy at least the `hugo.toml` in the root directory of your website. Overwrite the existing config file if necessary.
 
 Hugo includes a development server, so you can view your changes as you go -
 very handy. Spin it up with the following command:
