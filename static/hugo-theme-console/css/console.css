@@ -251,8 +251,8 @@ figure {
 
 @media only screen and (max-width: 850px) {
     .site-name {
+        width: 2ch;
         overflow: hidden;
-        display: inline-block;
     }
 
     .terminal-nav {
