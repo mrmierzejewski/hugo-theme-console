@@ -27,7 +27,7 @@ Theme is based on a modern and minimal [Terminal CSS](https://terminalcss.xyz/) 
 From the root of your Hugo site, clone the theme into `themes/hugo-theme-console` by running:
 
 ```bash
-$ git submodule add https://github.com/mrmierzejewski/hugo-theme-console.git hugo-theme-console
+$ git submodule add https://github.com/mrmierzejewski/hugo-theme-console.git themes/hugo-theme-console
 ```
     
 See the [Hugo documentation](https://gohugo.io/hugo-modules/theme-components/) for more information.
