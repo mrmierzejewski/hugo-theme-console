@@ -84,6 +84,66 @@ Add these parameters to your `hugo.toml` file for basic customization:
   url = "/photos/"
 ```
 
+### Custom styles
+
+On your main directory add `assets/css/custom.css`. Now you can overwrite default styles, i.e:
+
+```css
+
+:root {
+    --global-font-size: 16px;
+    --global-font-color: #444;
+    --mono-font-stack: Roboto Mono, Menlo, Monaco, Lucida Console,
+        Liberation Mono, DejaVu Sans Mono, Bitstream Vera Sans Mono,
+        Courier New, monospace, serif;
+    --font-stack: Roboto Mono, Menlo, Monaco, Lucida Console, Liberation Mono,
+        DejaVu Sans Mono, Bitstream Vera Sans Mono, Courier New, monospace,
+        serif;
+    --global-line-height: 1.6em;
+    --page-width: 70em;
+    --display-h1-decoration: 1;
+}
+
+@media (prefers-color-scheme: dark) {
+    :root {
+	--background-color: #222225;
+	--page-width: 60em;
+	--font-color: #e8e9ed;
+	--invert-font-color: #222225;
+	--secondary-color: #a3abba;
+	--tertiary-color: #a3abba;
+	--primary-color: #62c4ff;
+	--error-color: #ff3c74;
+	--progress-bar-background: #3f3f44;
+	--progress-bar-fill: #62c4ff;
+	--code-bg-color: #3f3f44;
+    }
+}
+
+@media (prefers-color-scheme: light) {
+    :root {
+	--background-color:#fff;
+	--font-color:#151515;
+	--invert-font-color:#fff;
+	--primary-color:#1a95e0;
+	--secondary-color:#727578;
+	--error-color:#d20962;
+	--progress-bar-background:#727578;
+	--progress-bar-fill:#151515;
+	--code-bg-color:#e8eff2;
+    }
+}
+
+@media only screen and (max-width: 850px) {
+    :root {
+        --global-font-size: 14px;
+        --global-font-color: #444;
+        --global-line-height: 1.6em;
+        --page-width: 70em;
+    }
+}
+```
+
 ## Quick Start
 
 After installation, take a look in the `exampleSite` folder. This directory contains an example config file and the content for the demo.

@@ -11,6 +11,10 @@
     <link rel="stylesheet" href="{{ "hugo-theme-console/css/terminal-0.7.4.min.css" | absURL }}">
     <link rel="stylesheet" href="{{ "hugo-theme-console/css/animate-4.1.1.min.css" | absURL }}">
     <link rel="stylesheet" href="{{ "hugo-theme-console/css/console.css" | absURL }}">
+    {{ with resources.Get "css/custom.css" }}
+      {{ $css := . | minify | fingerprint }}
+      <link rel="stylesheet" href="{{ $css.RelPermalink }}" integrity="{{ $css.Data.Integrity }}">
+    {{ end }}
     {{ `
       <!--[if lt IE 9]>
           <script src="https://oss.maxcdn.com/html5shiv/3.7.2/html5shiv.min.js"></script>
